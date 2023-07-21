@@ -1,2 +1,2 @@
-# Project_Brief_LucasDSBR
+# simple_e-commerce_LucasDSBR
 Simple e-commerce project.
