@@ -1,0 +1,25 @@
+<div class="banner">
+	<h2>Thank you!</h2>
+</div>
+<div class="product-container">
+	<div class="product-container-infos">
+		<div class="product-image">
+			<img width="60%" src="https://s3-alpha-sig.figma.com/img/e640/c84d/0f89201e4c72dd2763ed8b2ec33a1880?Expires=1690761600&Signature=MOfIIfLdJ0ShD-KOwPD2B1qLDNhvHJwIIu~o7F22pWXrs-znsk~2enNk4D1AT~aPA~GRa~K2nBbEFhTcDcUPVpLd-6Em3lb8xVkaytObDHiqP219JaXA0CHNDrO82Y2FPthVVmd2wQVVvqDDse74MYgw~upZn~HaEIhv6XPzZP5tcCVnsFzEyNQ3PrfzalbVacushdnRcZRDG~BNNWTXfB3OdS68oZR0Csa8Yf1xg02~O5WyofRlgXC1uIdbjj1WsvXEaPtRHale1K0xXEr9JN-X9tB2cNAPm0dkD4dKkn23fMCzpAStgMK8TNernvwIlWsdrAp8BHjhx1ooRqLI~g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Photo of a Shiba Inu">
+		</div>
+		<div class="produtc-infos">
+			<p>{{products[0].category_desc}}</p>
+			<h2>{{products[0].title}}</h2>
+			<h2>{{products[0].val}}</h2>
+		</div>
+	</div>
+	<div class="product-details">
+		<div *ngFor="let product of products">
+			<p>Produto: {{product.title}}</p>
+		</div>
+	</div>
+	<div class="product-add-cart">
+		<button routerLink="/thanks" mat-fab extended color="warn">
+			<p style="margin-left: 50px;margin-right: 50px;">Shared</p>
+		</button>
+	</div>
+</div>

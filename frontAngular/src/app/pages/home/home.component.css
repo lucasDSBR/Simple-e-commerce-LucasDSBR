@@ -1,0 +1,43 @@
+
+.container{
+	max-width: 90%;
+	max-height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+    margin-right: auto;
+	justify-content: center; /* Centraliza horizontalmente */
+}
+.banner {
+	display: flex;
+    background-color: #007AFF;
+    height: 90px;
+    align-items: center;
+}
+.banner h2{
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
+	color: #FFFFFF;
+}
+.select-catecory{
+	max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.containerBtns {
+	margin-top: 30px;
+	max-width: 90%;
+	max-height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+    margin-right: auto;
+	justify-content: center; /* Centraliza horizontalmente */
+}

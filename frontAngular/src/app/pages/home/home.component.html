@@ -1,0 +1,38 @@
+<section id="selectServices">
+	<div class="banner">
+		<h2>Select Your Services</h2>
+	</div>
+</section>
+<div class="select-catecory">
+	<mat-form-field>
+		<mat-label>Select category</mat-label>
+		<mat-select disableRipple [(ngModel)]="selectedCar">
+			<mat-option value="All">All</mat-option>
+			<div *ngFor="let cat of categori">
+				<mat-option value="{{cat}}">{{cat}}</mat-option>
+			</div>
+		</mat-select>
+	</mat-form-field>
+	<button mat-raised-button color="primary" (click)="filter()">Filter</button>
+</div>
+<div>
+	<div class="container">
+		<div *ngFor="let product of products">
+			<a style="text-decoration: none;" routerLink="/product/{{product.id}}">
+				<app-card-product
+					cat="{{product.category_desc}}"
+					title="{{product.title}}"
+					val="{{product.val}}"
+					url_image="{{product.url_image}}"
+				>
+			</app-card-product></a>
+		</div>
+	</div>
+	<div class="containerBtns">
+		<a style="text-decoration: none;" href="#selectServices">
+			<button mat-fab extended color="primary">
+				<p style="margin-left: 50px;margin-right: 50px;">Back to top</p>
+			</button>
+		</a>
+	</div>
+</div>
